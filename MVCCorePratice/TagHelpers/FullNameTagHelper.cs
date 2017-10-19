@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MVCCorePratice.TagHelpers
 {
@@ -12,10 +13,14 @@ namespace MVCCorePratice.TagHelpers
     [HtmlTargetElement("full-name")]
     public class FullNameTagHelper : TagHelper
     {
-        public ModelExpression AddressFor { get; set; }
+       [HtmlAttributeNotBound]
+       [ViewContext]
+        public ViewContext ViewContext { get; set; }
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            
+            var isHttps = ViewContext.HttpContext.Request.IsHttps;
+
+            output.Content.SetContent("Is Https "+isHttps);
         }
     }
 }
