@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace MVCCorePratice.TagHelpers
 {
@@ -11,11 +12,10 @@ namespace MVCCorePratice.TagHelpers
     [HtmlTargetElement("full-name")]
     public class FullNameTagHelper : TagHelper
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public ModelExpression AddressFor { get; set; }
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            output.Content.SetContent(FirstName + " " + LastName);
+            
         }
     }
 }

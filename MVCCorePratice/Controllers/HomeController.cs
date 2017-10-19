@@ -19,7 +19,7 @@ namespace MVCCorePratice.Controllers
                 LastName="Kiran Kumar"
             };
 
-            return View(model);
+            return View("Index", model);
         }
     }
 }
