@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCorePratice", "MVCCorePratice\MVCCorePratice.csproj", "{69B08074-BE2F-4810-B23F-67BAE86C8B00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCCorePratice", "MVCCorePratice\MVCCorePratice.csproj", "{69B08074-BE2F-4810-B23F-67BAE86C8B00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagHelpersLib", "TagHelpersLib\TagHelpersLib.csproj", "{36E51081-1F37-4392-882C-9BF2BA9E164D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{69B08074-BE2F-4810-B23F-67BAE86C8B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69B08074-BE2F-4810-B23F-67BAE86C8B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69B08074-BE2F-4810-B23F-67BAE86C8B00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E51081-1F37-4392-882C-9BF2BA9E164D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E51081-1F37-4392-882C-9BF2BA9E164D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E51081-1F37-4392-882C-9BF2BA9E164D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E51081-1F37-4392-882C-9BF2BA9E164D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
